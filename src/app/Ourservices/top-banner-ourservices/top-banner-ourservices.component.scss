@@ -1,0 +1,97 @@
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.bg-image {
+  height: auto;
+  width: 100%;
+}
+
+.home-half {
+  padding-bottom: 100px;
+  padding-top: 100px;
+
+  @media screen and (max-width: 991px) {
+    padding-top: 100px;
+  }
+}
+
+.bg-overlay {
+  background: #0F1419;
+  background-image: radial-gradient(farthest-corner at 10vw 350px,
+      #2C2F62 5%,
+      #0F1419 50%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+}
+
+.home-small-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-weight: 500;
+
+}
+
+.home-title {
+  font-size: 3.5rem;
+  line-height: 64px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+
+  @media screen and (max-width: 991px) {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+}
+
+.home-padding-t-150 {
+  padding-top: 150px;
+}
+
+.home-desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.3rem;
+  font-family: 'Lato', sans-serif;
+  max-width: 600px;
+  line-height: 32px;
+  font-weight: 500;
+
+  @media screen and (max-width: 991px) {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+}
+
+.mt-30 {
+  margin-top: 100px;
+
+  @media screen and (max-width: 991px) {
+    margin-top: 0px;
+  }
+}
+
+.start-project-btn {
+  color: #2e4469;
+  font-weight: 600;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+.sticky {
+  position: fixed;
+  position: -webkit-sticky;
+  top: 70%;
+  margin-left: 20px;
+}
+
+.start-project-btn:hover {
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}

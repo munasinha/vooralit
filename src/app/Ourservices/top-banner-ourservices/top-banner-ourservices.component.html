@@ -1,0 +1,93 @@
+<section
+  class="section bg-home home-half"
+  id="home"
+  data-image-src="images/bg.jpg"
+>
+  <div class="bg-overlay"></div>
+
+  <div class="container-fluid mb-5">
+    <div class="row">
+      <div class="col-lg-6 text-white text-center mt-30">
+        <h1 class="home-title mb-4">
+          Our Services
+        </h1>
+        <p class="padding-t-15 home-desc mx-auto">
+          Tell us about your dream project here We are here
+          to solve your all problems regarding the web designing
+          and developing. Doesn’t matter what you are and what is
+          your requirement definitely we will have the solved designing
+          for you as much possible as you required.
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <img src="assets/bg.png" class="bg-image">
+      </div>
+    </div>
+
+        <!-- ************************** "Start Project" Button ************************** -->
+
+    <div class="row container animated slideInLeft">
+
+      <div class="col-md-12">
+        <button class="v-btn start-project-btn" (click)="quotation.show()">
+          Start a Project &nbsp;
+          <mdb-icon fas icon="arrow-right"></mdb-icon>
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- <div class="wave-effect wave-anim">
+
+    <div class="waves-shape shape-one">
+      <div
+        class="wave wave-one"
+        style="background-image: url('assets/images/wave-shape/wave2.png')"
+      ></div>
+    </div>
+
+    <div class="waves-shape shape-two">
+      <div
+        class="wave wave-two"
+        style="background-image: url('assets/images/wave-shape/wave2.png')"
+      ></div>
+    </div>
+
+    <div class="waves-shape shape-three">
+      <div
+        class="wave wave-three"
+        style="background-image: url('assets/images/wave-shape/wave2.png')"
+      ></div>
+    </div>
+
+  </div> -->
+
+</section>
+
+
+  <!-- **************************  Quotation model **************************** -->
+
+  <div mdbModal #quotation="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close pull-right" aria-label="Close" (click)="quotation.hide()">
+            <span aria-hidden="true">×</span>
+          </button>
+          <p class="h2 modal-title w-100 text-center">Get Your Free Quotation</p>
+        </div>
+        <div class="modal-body px-5">
+
+          <!--
+            ** component location -> /Shared/quotation-form
+            ** mdboostrap large popup model
+          -->
+          <app-quotation-form></app-quotation-form>
+
+        </div>
+      </div>
+    </div>
+  </div>

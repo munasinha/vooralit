@@ -1,0 +1,123 @@
+.container-custom {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.card {
+  border-radius: 8px;
+  // background: #fff;
+
+  background-color: rgba(255, 255, 255, .1);
+
+  box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+  transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+  padding: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+.card h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: 'Lato',
+    sans-serif;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+
+@media(max-width: 990px) {
+  .card {
+    margin: 20px;
+  }
+}
+
+
+.section-bg {
+  background-color: #0f1419;
+  background-image: radial-gradient(farthest-corner at 0vw 100%,
+      #2C2F62 0%,
+      #0F1419 50%);
+
+  @media screen and (max-width: 991px) {
+    background-color: #0f1419;
+    background-image: none;
+  }
+}
+
+.section-bg-2 {
+  background-color: #0f1419;
+
+  background: radial-gradient(farthest-corner at 0 0,
+      #2C2F62,
+      #2c2f6200 50%),
+
+    radial-gradient(farthest-corner at 100vw 100%,
+      #2C2F62,
+      rgba(0, 0, 0, 0) 50%) #0F1419;
+
+
+  @media screen and (max-width: 991px) {
+    background-color: #0f1419;
+    background-image: none;
+  }
+}
+
+.section-bg-3 {
+  background-color: #0f1419;
+  background-image: radial-gradient(farthest-corner at 100vw 0vw,
+      #2C2F62 0%,
+      #0F1419 50%);
+
+  @media screen and (max-width: 991px) {
+    background-color: #0f1419;
+    background-image: none;
+  }
+}
+
+.section {
+  // padding-top: 100px;
+  padding-bottom: 50px;
+  color: #fff;
+}
+
+.separator--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.separator {
+  margin-top: 0;
+  margin-bottom: 24px;
+  display: block;
+  height: 3px;
+  background: linear-gradient(90deg, #2583ee, #712f90);
+  border: 0;
+  width: 152px;
+  max-width: 152px;
+  position: relative;
+}
+
+.separator-full {
+   margin-top: 0;
+   height: 2px;
+   background: linear-gradient(90deg, #2583ee, #712f90);
+   border: 0;
+   width: 100%;
+   position: relative;
+}
+
+.section>h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: 'Lato',
+    sans-serif;
+  flex: 1 0 100%;
+  max-width: 100%;
+  padding-bottom: 20px;
+}

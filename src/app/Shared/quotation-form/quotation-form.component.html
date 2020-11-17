@@ -1,0 +1,156 @@
+
+<form id="quota-form" [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+    <div class="form-row">
+
+      <div class="form-group col-md-6">
+
+        <label for="firstName"> First Name*</label>
+        <input mdbInput type="text" class="form-control" id="firstName"  formControlName="firstName"
+          placeholder="first name">
+
+          <div *ngIf="submitted && f.firstName.errors">
+            <div *ngIf="f.firstName.errors.required"  class="text-danger">First Name is required *</div>
+         </div>
+
+      </div>
+
+      <div class="form-group col-md-6">
+
+        <label for="lastName">Last Name*</label>
+        <input mdbInput type="text" class="form-control"  formControlName="lastName" id="lastName" placeholder="last name">
+
+        <div *ngIf="submitted && f.lastName.errors">
+          <div *ngIf="f.lastName.errors.required"  class="text-danger">Last Name is required *</div>
+       </div>
+
+      </div>
+    </div>
+
+    <div class="form-row">
+
+      <div class="form-group col-md-6">
+
+        <label for="email">Email*</label>
+        <input mdbInput type="email" class="form-control" id="email"  formControlName="email" placeholder="email">
+
+        <div *ngIf="submitted && f.email.errors">
+          <div *ngIf="f.email.errors.required" class="text-danger">Email is required *</div>
+          <div *ngIf="f.email.errors.email" class="text-danger">Email must be a valid email address *</div>
+       </div>
+
+      </div>
+
+      <div class="form-group col-md-6">
+
+        <label for="phonenumber">Phone Number*</label>
+        <input mdbInput type="number" class="form-control"  formControlName="phonenumber" id="phonenumber"
+          placeholder="phone number">
+
+          <div *ngIf="submitted && f.phonenumber.errors">
+            <div *ngIf="f.phonenumber.errors.required" class="text-danger">Phonenumber is required *</div>
+         </div>
+
+      </div>
+    </div>
+
+    <div class="form-row">
+
+      <div class="form-group col-md-6">
+
+        <label for="country">Country*</label>
+        <input mdbInput type="text" class="form-control" id="country"  formControlName="country" placeholder="country" >
+
+        <div *ngIf="submitted && f.country.errors">
+          <div *ngIf="f.country.errors.required" class="text-danger">Country is required *</div>
+       </div>
+
+      </div>
+
+      <div class="form-group col-md-6">
+
+        <label for="city">City</label>
+        <input mdbInput type="tel" class="form-control"  formControlName="city" id="city" placeholder="city" >
+
+      </div>
+    </div>
+
+    <div class="form-row">
+
+      <div class="form-group col-md-6">
+
+        <label for="companyname">Company Name*</label>
+        <input mdbInput type="companyname" class="form-control" id="companyname"  formControlName="companyname"
+          placeholder="company name" required>
+
+          <div *ngIf="submitted && f.companyname.errors">
+            <div *ngIf="f.companyname.errors.required" class="text-danger">Company Name is required *</div>
+         </div>
+
+      </div>
+
+      <div class="form-group col-md-6">
+
+        <label for="companyType">Company Type*</label>
+        <select class="browser-default custom-select"   formControlName="companyType" id="companyType">
+
+          <option [selected]="true" value="StartupEarlyStage"> Startup - Early Stage </option>
+          <option value="StartupLateStage" > Startup - Late Stage </option>
+          <option value="SmallOrMediumSizeBusiness"> Small Or Medium Size Business </option>
+          <option value="Enterprise"> Enterprise </option>
+          <option value="Non-Profit"> Non-Profit </option>
+          <option value="Other"> Other </option>
+
+        </select>
+
+      </div>
+    </div>
+
+    <div class="form-row">
+
+      <div class="form-group col-md-12">
+
+        <label for="discription">Brief Introduction About Your Requirement</label>
+        <textarea type="text" id="discription" class="md-textarea md-textarea-auto form-control"  formControlName="discription"
+          placeholder="Give a brief introduction on your requirements."
+          mdbInput></textarea>
+
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label for=""> Services You Need </label>
+    </div>
+
+    <div class="form-row">
+
+      <div class="col-md-6">
+
+        <mdb-checkbox [default]='true' formControlName="Consulting">Consulting</mdb-checkbox><br>
+        <mdb-checkbox [default]='true' formControlName="uiux">UI/UX Design</mdb-checkbox> <br>
+        <mdb-checkbox [default]='true' formControlName="CloudService">Cloud Service</mdb-checkbox> <br>
+        <mdb-checkbox [default]='true' formControlName="RESTfullAPIService">REST full API Service</mdb-checkbox> <br>
+
+
+      </div>
+
+      <div class="col-md-6">
+
+        <mdb-checkbox [default]='true' formControlName="StaticWebSite"> Static WebSite </mdb-checkbox> <br>
+        <mdb-checkbox [default]='true' formControlName="WebApplicationDevelopment"> Web Application Development </mdb-checkbox> <br>
+        <mdb-checkbox [default]='true' formControlName="MobileApplicationDevelopment"> Mobile Application Development </mdb-checkbox> <br>
+        <mdb-checkbox [default]='true' formControlName="EcommMobApp"> E-commerce Web Application / Mobile Application </mdb-checkbox>
+        <br>
+
+      </div>
+
+    </div>
+
+    <div class="modal-footer">
+      <button mdbBtn color="info" [outline]="true" class="waves-effect z-depth-0 submit-btn text-center"
+        mdbWavesEffect type="submit"> Submit </button>
+    </div>
+
+    <div id="ajax-msg-container" class="mb-5 text-center" style="background-color:#3fad3f;">
+    </div>
+
+  </form>

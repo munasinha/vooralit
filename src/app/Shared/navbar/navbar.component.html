@@ -1,0 +1,72 @@
+<nav class="navbar sticky-top shadow-none navbar-dark navbar-expand-lg navbar-custom" id="navbar-cnt">
+
+  <div class="container">
+
+    <div class="">
+      <a class="logo" href="/">
+        <img src="../../../assets/logo.png" class="logo">
+      </a>
+    </div>
+
+    <div class="container px-3">
+
+      <div class="row w-100">
+
+        <div class="col-2 hamburger-icon">
+          <button class="navbar-toggler" id="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="#navbarToggler"
+            aria-controls="navbarToggler" aria-expanded="false"
+            aria-label="Toggle navigation" (click)="isShown = !isShown">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="col-10 ">
+          <div class="collapse justify-content-end navbar-collapse" [ngClass]="{ 'show': isShown }"
+            id="navbarToggler">
+            <ul class="navbar-nav mt-2 mt-lg-0">
+
+              <li class="nav-item px-2 nav-item-font" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a class="nav-link"  routerLink="/" (click)="isShown = false">
+                  Home
+                </a>
+              </li>
+
+              <li class="nav-item px-2 nav-item-font" routerLinkActive="active">
+                <a class="nav-link" routerLink="/our-services" (click)="isShown = false">
+                  Services & Support
+                </a>
+              </li>
+
+              <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/our-Workes" (click)="isShown = false">
+                  Work & Solutions
+                </a>
+              </li>
+
+              <li class="nav-item px-2 nav-item-font" routerLinkActive="active">
+                <a class="nav-link" routerLink="/about-us" (click)="isShown = false">
+                  About us
+                </a>
+              </li>
+
+              <li class="nav-item px-2 nav-item-font" routerLinkActive="active">
+                <a class="nav-link" routerLink="/contact-us" (click)="isShown = false">
+                  Contact us
+                </a>
+              </li>
+
+              <!-- <li class="nav-item px-2 nav-item-font" routerLinkActive="active">
+                <a class="v-btn vooral-btn-round" routerLink="/contact-us" (click)="isShown = false">
+                  Start a project
+                </a>
+              </li> -->
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,55 @@
+.card {
+  border-radius: 8px;
+  // padding: 5px;
+}
+
+.section-bg {
+  background-color: #f1f1f1 !important;
+}
+
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.separator {
+  display: block;
+  height: 3px;
+  background: linear-gradient(90deg, #2583ee, #712f90);
+  border: 0;
+  width: 152px;
+  max-width: 152px;
+  position: relative;
+}
+
+.separator-center {
+  margin-right: auto;
+}
+
+.section--slider .separator-center {
+  margin-left: 0;
+  text-align: left;
+
+  @media screen and (max-width: 600px) {
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.section-title {
+  font-weight: 600;
+  color: #0f1419;
+  @media screen and (max-width: 600px) {
+    text-align: center;
+  }
+}
+
+.section-subtitle {
+  margin-top: 15px;
+   font-size: 1.1rem;
+   font-weight: 300;
+   font-family: 'Montserrat', sans-serif;
+}

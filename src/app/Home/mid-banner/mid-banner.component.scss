@@ -1,0 +1,44 @@
+.main-banner {
+  background: linear-gradient(to right, #F58F93, #F58F95);
+  width: 100%;
+  height: auto;
+}
+
+.main-banner span {
+  position: absolute;
+  margin-top: 5%;
+  left: 5%;
+
+  width: 48%;
+  // line-height: 110%;
+}
+
+.title {
+ font-family: "Montserrat", sans-serif;
+ font-size: 3.3vw;
+ font-weight: 700;
+ color: #FFFFFF;
+ text-align: center;
+}
+
+.sub-title {
+  // margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+   font-family: "Montserrat",
+   sans-serif;
+   font-size: 1.1vw;
+   font-weight: 500;
+   color: #FFFFFF;
+   line-height: normal;
+ text-align: center;
+
+}
+
+.section {
+  background: url("../../../assets/images/banner-04.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25vw;
+}

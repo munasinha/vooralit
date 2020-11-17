@@ -1,0 +1,67 @@
+.logo {
+  width:150px;
+
+  @media screen and (max-width: 991px) {
+    position: absolute;
+    right: 0;
+    // left: 0;
+    width: 120px;
+    margin-right: 12px;
+    top: 0;
+  }
+}
+
+.logo-container {
+  width: 100%;
+  height: 55px;
+  position: relative;
+}
+
+.hamburger-icon {
+  position: relative;
+  top: 0;
+}
+
+.site-menu {
+  position: relative;
+  left: -5%;
+}
+
+.navbar-custom {
+  background-color: #0f1419;
+  height: 50px;
+  outline: none;
+}
+
+.nav-item-font {
+  font-size: 16px;
+}
+
+nav {
+  // height: 8%;
+  padding: 0 !important;
+}
+
+.navbar-nav>li {
+  float: left;
+  position: relative;
+  font-size: 16px;
+  font-weight: 450;
+}
+
+.navbar-dark .navbar-nav .active a::after {
+  border-bottom: 2px solid #ffffff;
+  bottom: -4px;
+  content: " ";
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.navbar-dark .navbar-nav .active::after {
+  background-color: transparent;
+}
+
+.nav-item a {
+  color: #ffffff;
+}

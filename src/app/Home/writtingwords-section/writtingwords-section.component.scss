@@ -1,0 +1,33 @@
+.text-slider {
+  font-family: "Montserrat", sans-serif;
+  // color: linear-gradient(90deg, #2583ee, #712f90);
+  font-size: 3vw;
+  font-weight: 600;
+  font-style: italic;
+  background: linear-gradient(90deg, #2583ee, #712f90);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-title {
+  color: #0f1419;
+  font-size: 2.3vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .intro-title {
+    font-size: 2rem;
+  }
+
+  .text-slider {
+    font-size: 2.2rem;
+  }
+
+  .banner-text {
+    min-height:100px;
+  }
+
+}

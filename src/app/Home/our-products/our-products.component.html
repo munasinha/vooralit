@@ -1,0 +1,63 @@
+<div class="section-bg my-5 py-lg-5">
+  <div class="d-block d-md-flex justify-content-around">
+    <div class="col-md-5">
+      <div class="row m-0">
+        <div class="col-lg-12 mt-lg-5 pt-lg-3 pr-lg-1">
+          <div class="row justify-content-lg-end m-0 p-0">
+            <div class="col-lg-6 section--slider">
+              <h1 class="section-title">Our</h1>
+              <h1 class="section-title">Case Studies</h1>
+              <hr class="separator separator-center" />
+              <div class="section-title-border margin-t-20"></div>
+              <p
+                class="section-subtitle text-left"
+              >
+                this is our products
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-7">
+      <owl-carousel-o [options]="customOptions" id="casestudies">
+        <ng-container *ngFor="let item of carouselData">
+          <ng-template carouselSlide>
+            <div class="slide">
+              <div
+                class="card card-image"
+                style="
+                  background-image: url('{{ item.image }}');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div
+                  class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4"
+                >
+                  <div>
+                    <h5 class="text-white">
+                      <i class="fas {{ item.categoryIcon }} pr-2"></i>
+                      {{ item.category }}
+                    </h5>
+                    <h3 class="card-title pt-2">
+                      <strong>{{ item.title }}</strong>
+                    </h3>
+                    <p>
+                      {{ item.description }}
+                    </p>
+                    <a class="v-btn vooral-btn-round"
+                      ><i class="fas fa-clone left pr-2"></i> View project</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+  </div>
+</div>
