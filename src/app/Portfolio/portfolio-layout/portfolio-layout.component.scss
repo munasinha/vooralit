@@ -1,0 +1,71 @@
+.section {
+  padding-bottom: 50px;
+  color: #fff;
+  height: 100vh;
+}
+
+
+.section-bg-left-img {
+  background-color: #0f1419;
+  background-image: radial-gradient(circle at 25vw 50%,
+      #2C2F62 0%,
+      #0F1419 30%);
+
+  @media screen and (max-width: 991px) {
+    background-color: #0f1419;
+    background-image: none;
+  }
+}
+
+.section-bg-right-img {
+  background-color: #0f1419;
+  background-image: radial-gradient(circle at 75vw 50%,
+      #2C2F62 0%,
+      #0F1419 30%);
+
+  @media screen and (max-width: 991px) {
+    background-color: #0f1419;
+    background-image: none;
+  }
+}
+
+.client-logo {
+
+}
+
+.client-details {
+
+  padding-top: 200px;
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    margin-top: 20px;
+  }
+
+  h6{
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: 'Lato',
+    sans-serif;
+    margin-top: 20px;
+  }
+
+  p{
+        font-size: 1.1rem;
+        font-weight: 300;
+        font-family: 'Lato',
+        sans-serif;
+        margin-top: 20px;
+  }
+
+  @media screen and (max-width: 991px) {
+    padding-top: 50px;
+  }
+
+}
+
+.pl-20 {
+  padding-left: 5%;
+}
